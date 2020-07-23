@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('APP Build') {
             steps {
-                sh './gradelw build'
+                sh './gradlew build'
                 archiveArtifacts artifacts: 'dist/trainSchedule.zip'
             }
         }
