@@ -1,0 +1,10 @@
+pipeline {
+    stages {
+        stage('APP Build') {
+            steps {
+                sh './gradelw build'
+                archive : dist/trainSchedule.zip
+            }
+        }
+    }
+}
